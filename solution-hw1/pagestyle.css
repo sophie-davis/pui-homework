@@ -19,6 +19,10 @@ h3 {
     font-weight: normal;
 }
 
+.price {
+    text-decoration: underline;
+}
+
 
 p {
     text-align: center;
@@ -31,4 +35,8 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.dropdown {
+    text-align: left;
 }
