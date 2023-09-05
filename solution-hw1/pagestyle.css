@@ -5,7 +5,30 @@
     margin-top: 10px;
 }
 
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
 
 p {
     text-align: center;
+    font-size: 25px;
+}
+
+.productimages{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
