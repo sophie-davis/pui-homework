@@ -1,9 +1,20 @@
 .notecard {
     background-color: pink;
-    width: 50rem;
+    width: 500px;
     border: 1px solid black;
+    display:flex;
+    flex-direction: row;
 }
 
 .note-image{
-    width: 100%;
+    width: 50%;
+}
+
+.notecard-title {
+    width: 500px;
+}
+
+.button{
+    width:100px;
+    height: 100px;
 }

@@ -1,26 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+
+body {
+    font-family: 'Quicksand'
+}
+
+
 .productCard {
     width: auto;
     height: auto;
-    margin-left: 740px;
-    margin-right: 740px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 15px;
+    padding-bottom: 1px;
 }
+
 
 .product {
     width: auto;
     height: auto;
-    margin-left: 850px;
-    margin-right: 850px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 .cart {
     width: auto;
     height: auto;
-    margin-left: 900px;
-    margin-right: 900px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 .remove{
     font-size: 10px;
+    text-decoration: underline;
 }
 
 .logo{
@@ -45,6 +58,7 @@ h2 {
 
 .price {
     text-decoration: underline;
+    color: black;
 }
 
 hr {
@@ -59,13 +73,23 @@ p {
     font-size: 25px;
 }
 
+.cost {
+    text-align: left;
+    padding: 5px;
+}
+
+.price {
+    text-align: left;
+    padding: 5px;
+}
+
 .productimages{
     width: 400px;
     height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid;
+    border: 3px solid black;
 }
 
 .productimagedetail {
@@ -101,7 +125,6 @@ p {
 
 .product:hover {
     background-color: yellow;
-    font-weight: bold;
 }
 
 .cart:hover{
@@ -144,9 +167,33 @@ p {
     font-size: 20px;
 }
 
-.price {
-    float: left;
+.detailCard{
+    text-align: center;
 }
+
+.dropdown{
+    width: 200px;
+    padding: 5px;
+}
+
+.dropDownSection {
+    width: 325px;
+    height: 325px;
+    margin-left: 475px;
+    text-align: right;
+}
+
+.customize {
+    width: 250px;
+    margin-left: 600px;
+    text-align: left;
+}
+
+
+
+
+
+
 
 
 
