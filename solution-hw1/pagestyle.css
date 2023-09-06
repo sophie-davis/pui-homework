@@ -1,26 +1,56 @@
+.productCard {
+    width: auto;
+    height: auto;
+    margin-left: 740px;
+    margin-right: 740px;
+}
+
+.product {
+    width: auto;
+    height: auto;
+    margin-left: 850px;
+    margin-right: 850px;
+}
+
+.cart {
+    width: auto;
+    height: auto;
+    margin-left: 900px;
+    margin-right: 900px;
+}
+
+.remove{
+    font-size: 10px;
+}
+
 .logo{
     width: 400px;
     height: 400px;
-    margin-top: 10px;
-    margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 h1 {
     text-align: center;
+    font-size: 30;
+   
 }
 
 h2 {
     text-align: center;
     font-weight: normal;
+    font-size: 25;
 }
 
-h3 {
-    text-align: center;
-    font-weight: normal;
-}
 
 .price {
     text-decoration: underline;
+}
+
+hr {
+    width: auto;
+    height: 3px;
+    background-color: black;
 }
 
 
@@ -35,8 +65,94 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid;
+}
+
+.productimagedetail {
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid;
+}
+
+.productimagecart {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid;
+}
+
+.cartCard{
+    line-height: 3px;
 }
 
 .dropdown {
     text-align: left;
 }
+
+.productCard:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.product:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.cart:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+hr.shopping{
+    width:800px;
+}
+
+.click:hover{
+    background-color: yellow;
+}
+
+.addToCart{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.checkout{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.click{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.detailCard{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.price {
+    float: left;
+}
+
+
+
+
+
+
+
+
+
