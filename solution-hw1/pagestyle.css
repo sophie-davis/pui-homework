@@ -1,88 +1,95 @@
-
+/*Importing the Quicksand Google font*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
-
+/*Setting the body font to Quicksand, and the backups of Arial, Helvetica, and sans-serif*/
 body {
-    font-family: 'Quicksand'
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif
+
 }
-
-
-.productCard {
-    width: auto;
-    height: auto;
-    margin-left: 500px;
-    margin-right: 500px;
-    padding-top: 15px;
-    padding-bottom: 1px;
+/*Setting anchor to black*/
+a {
+    text-decoration: none;
+    color:black
 }
-
-
-.product {
-    width: auto;
-    height: auto;
-    margin-left: 500px;
-    margin-right: 500px;
-}
-
-.cart {
-    width: auto;
-    height: auto;
-    margin-left: 500px;
-    margin-right: 500px;
-}
-
-.remove{
-    font-size: 10px;
-    text-decoration: underline;
-}
-
-.logo{
-    width: 400px;
-    height: 400px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
+/*Setting header1 values*/
 h1 {
     text-align: center;
     font-size: 30;
-   
+    color: black;
+    text-decoration: none;
 }
-
+/*Setting header2 values*/
 h2 {
     text-align: center;
     font-weight: normal;
     font-size: 25;
+    text-decoration: none;
+    color: black;
 }
-
-
+/*Setting productCard values*/
+.productCard {
+    width: 35%;
+    margin: auto;
+    line-height: 3px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+/*Setting product values*/
+.product {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+/*Setting cart values*/
+.cart {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+}
+/*Setting remove values*/
+.remove{
+    font-size: 10px;
+    text-decoration: underline;
+}
+/*Setting logo values*/
+.logo{
+    width: 400px;
+    height: 400px;
+}
+/*Setting price values*/
 .price {
     text-decoration: underline;
     color: black;
 }
-
+/*Setting hr values*/
 hr {
     width: auto;
     height: 3px;
     background-color: black;
 }
-
-
+/*Setting paragraph values*/
 p {
     text-align: center;
     font-size: 25px;
 }
-
+/*Setting cost values*/
 .cost {
     text-align: left;
-    padding: 5px;
+    padding-left: 10px;
 }
-
+/*Setting price values*/
 .price {
     text-align: left;
-    padding: 5px;
+    padding: 10px;
 }
-
+/*Setting product images values*/
 .productimages{
     width: 400px;
     height: 400px;
@@ -91,7 +98,7 @@ p {
     margin-right: auto;
     border: 3px solid black;
 }
-
+/*Setting product image detail values*/
 .productimagedetail {
     width: 600px;
     height: 600px;
@@ -100,7 +107,7 @@ p {
     margin-right: auto;
     border: 5px solid;
 }
-
+/*Setting product image cart values*/
 .productimagecart {
     width: 200px;
     height: 200px;
@@ -109,86 +116,97 @@ p {
     margin-right: auto;
     border: 5px solid;
 }
-
+/*Setting cart card values*/
 .cartCard{
     line-height: 3px;
+    width: 50%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    line-height: 3px;
 }
-
+/*Setting dropdown values*/
 .dropdown {
     text-align: left;
 }
-
+/*Setting product card hover values*/
 .productCard:hover {
     background-color: yellow;
     font-weight: bold;
 }
-
+/*Setting product hover values*/
 .product:hover {
     background-color: yellow;
+    font-weight: bold;
+    color: black;
 }
-
+/*Setting cart hover values*/
 .cart:hover{
     background-color: yellow;
     font-weight: bold;
+    color: black;
 }
-
+/*Setting shopping hr line value*/
 hr.shopping{
     width:800px;
 }
-
+/*Setting click hover value*/
 .click:hover{
     background-color: yellow;
 }
-
+/*Setting add to cart vaues*/
 .addToCart{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     text-align: center;
+    width: 20%;
 }
-
-.checkout{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-}
-
+/*Setting click values*/
 .click{
     display: inline-block;
-    margin-left: 20px;
+    margin: 20px;
 }
-
-.detailCard{
-    margin-top: auto;
-    margin-bottom: auto;
+/*Setting checkout values*/
+.checkout{
+    margin: auto;
     text-align: center;
+    width: 50%;
 }
-
+/*Setting paragraph values*/
 p {
     font-size: 20px;
 }
-
-.detailCard{
-    text-align: center;
-}
-
+/*Setting dropdown values*/
 .dropdown{
     width: 200px;
     padding: 5px;
 }
-
+/*Setting drop down section values*/
 .dropDownSection {
-    width: 325px;
-    height: 325px;
-    margin-left: 475px;
-    text-align: right;
-}
-
-.customize {
-    width: 250px;
-    margin-left: 600px;
+    margin: auto;
+    width: 20%;
     text-align: left;
 }
-
+/*Setting customize values*/
+.customize {
+    margin: auto;
+    width: 20%;
+    text-align: left;
+    padding-top: 2%;
+}
+/*Setting detail price value*/
+.detailPrice{
+    font-weight: bold;
+}
+/*Setting detail card values*/
+.detailCard{
+    margin: auto;
+    text-align: start;
+    padding-top: 2%;
+}
+/*Setting options values*/
+.options{
+    text-align: start;
+}
 
 
 

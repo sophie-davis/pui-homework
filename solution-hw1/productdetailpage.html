@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<!--Setting language to English-->
 <html lang="en">
-  <meta charset="UTF-8">
   <head>
+    <meta charset="UTF-8">
+    <!--Linking to my css stylesheet-->
     <link rel="stylesheet" 
           href="pagestyle.css"/>
+    <!--The title that will appear on the tab in my browser-->
     <title>Product Detail Page</title>
   </head>
   <body>
+    <!--Displaying the Bun Bun logo and linking to the product gallery page-->
     <a href="./index.html">
     <img 
       src = "../assets/logo/logo-01.svg"
@@ -14,19 +18,21 @@
       class = "logo"
     />
     </a>
+  <!--Drawing the dividing line-->
   <hr>
-
   <div class="titleKeyWords">
     <h1 class="product">
+      <!--Linking the Product line to this main product gallery-->
       <a href="./index.html">PRODUCTS</a>
     </h1>
     <h1 class="cart">
+      <!--Linking the Cart line to the shopping cart page-->
       <a href="./shoppingcartpage.html">CART</a>
-    <h1>
+    </h1>
     <h2 class="thirdLine">Original cinnamon rolls</h2>
   </div>
-
   <div class="detailCard">
+    <!--Picture of the cinnamon roll-->
     <img 
       src = "../assets/products/original-cinnamon-roll.jpg"
       alt = "original cinnamon roll"
@@ -34,14 +40,16 @@
     />
     <p class="customize">Customize our delicious, hand-made cinammon roll to your liking!</p>
     <div class="dropDownSection">
-      <p>Glazing:</p>
+      <p class="options">Glazing:</p>
+      <!--Glazing drop down menu-->
         <select class="dropdown">
           <option>Keep original</option>
           <option>Sugar milk</option>
           <option>Vanilla milk</option>
           <option>Double chocolate</option>
         </select>
-      <p>Pack size:</p>
+      <p class="options">Pack size:</p>
+      <!--Pack size dropdown menu-->
         <select class="dropdown">
           <option>1</option>
           <option>3</option>
@@ -50,14 +58,10 @@
         </select>
     </div>
   </div>
-  
   <br>
-
   <div class="addToCart">
-    <p class="click">$2.49</p>  
-    <button class="click">Add to cart</button>
-</div>
-
-    
+    <!--Price and add to cart button-->
+    <p class="detailPrice">$2.49<button class="click"> Add to cart</button></p>  
+  </div> 
 </body>
 </html>
