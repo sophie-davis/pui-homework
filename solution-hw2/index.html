@@ -10,40 +10,54 @@
     <title>Product Gallery</title>
   </head>
 
+<body>
+  
+  
+  
+  
+    <div class="pageHeader">
+      
+      <!--<div class="logoFlex"></div>-->
+      <!--Displaying the Bun Bun logo and linking to the product gallery page-->
+      <a href="./index.html">
+        <img 
+          src = "../assets/logo/logo-01.svg"
+          alt = "logo"
+          class = "logo"
+        />
+        </a>
+      <!--</div>-->
+      
+      <div class="titleContainer">
+        <div class="titleKeywords">
+          <h1 class="product">
+            <!--Linking the Product line to this main product gallery-->
+            <a href="./index.html">PRODUCTS</a>
+          </h1>
+          <h1 class="cart">
+            <!--Linking the Cart line to the shopping cart page-->
+            <a href="./shoppingcartpage.html">CART</a>
+          </h1>
+        </div>
+        <div class="titleHeader">
+          <!--Drawing the dividing line-->
+          <hr>
+        </div>
+        <h2>Our hand-made cinnamon rolls</h2>
+      </div>
 
 
-  <body>
-    <!--Displaying the Bun Bun logo and linking to the product gallery page-->
-    <a href="./index.html">
-    <img 
-      src = "../assets/logo/logo-01.svg"
-      alt = "logo"
-      class = "logo"
-    />
-    </a>
-  
-  
-  
-  <!--Drawing the dividing line-->
-  <hr>
+    </div>
   
   
   
   
-  <div class="titleKeyWords">
-    <h1 class="product">
-      <!--Linking the Product line to this main product gallery-->
-      <a href="./index.html">PRODUCTS</a>
-    </h1>
-    <h1 class="cart">
-      <!--Linking the Cart line to the shopping cart page-->
-      <a href="./shoppingcartpage.html">CART</a>
-    </h1>
-    <h2 class="thirdLine">Our hand-made cinnamon rolls</h2>
-  </div>
+ 
+    
 
 
 
+<div class="productCardParent">
   <div class="productCard">
     <!--Linking the product section to the product detail page-->
     <a href="./productdetailpage.html">
@@ -117,9 +131,11 @@
       alt = "double chocolate cinnamon roll"
       class = "productimages"
     />
-    <p class="price">Double-chocoloate cinnamon roll</p>
-    </a>
-    <p class="cost">$3.99</p>
+    <div class="script">
+      <p class="price">Double-chocoloate cinnamon roll</p>
+      </a>
+      <p class="cost">$3.99</p>
+    </div>
   </div>
 
 
@@ -133,10 +149,14 @@
       alt = "strawberry cinnamon roll"
       class = "productimages"
     />
+    
     <p class="price">Strawberry cinnamon roll</p>
     </a>
     <p class="cost">$3.99</p>
   </div>
+
+
+</div>
 
 
 

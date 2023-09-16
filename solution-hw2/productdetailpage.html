@@ -15,68 +15,83 @@
  
  
   <body>
-    <!--Displaying the Bun Bun logo and linking to the product gallery page-->
-    <a href="./index.html">
-    <img 
-      src = "../assets/logo/logo-01.svg"
-      alt = "logo"
-      class = "logo"
-    />
-    </a>
-  <!--Drawing the dividing line-->
-  <hr>
-
-
-
-  <div class="titleKeyWords">
-    <h1 class="product">
-      <!--Linking the Product line to this main product gallery-->
-      <a href="./index.html">PRODUCTS</a>
-    </h1>
-    <h1 class="cart">
-      <!--Linking the Cart line to the shopping cart page-->
-      <a href="./shoppingcartpage.html">CART</a>
-    </h1>
-    <h2 class="thirdLine">Original cinnamon rolls</h2>
-  </div>
+    <div class="pageHeader">
+      
+        <!--<div class="logoFlex"></div>-->
+        <!--Displaying the Bun Bun logo and linking to the product gallery page-->
+        <a href="./index.html">
+          <img 
+            src = "../assets/logo/logo-01.svg"
+            alt = "logo"
+            class = "logo"
+          />
+          </a>
+        <!--</div>-->
+        
+        <div class="titleContainer">
+          <div class="titleKeywords">
+            <h1 class="product">
+              <!--Linking the Product line to this main product gallery-->
+              <a href="./index.html">PRODUCTS</a>
+            </h1>
+            <h1 class="cart">
+              <!--Linking the Cart line to the shopping cart page-->
+              <a href="./shoppingcartpage.html">CART</a>
+            </h1>
+          </div>
+          <div class="titleHeader">
+            <!--Drawing the dividing line-->
+            <hr>
+          </div>
+          <h2>Original cinammon roll</h2>
+        </div>
+  
+  
+      </div>
+    
 
 
 
 
   <div class="detailCard">
+
     <!--Picture of the cinnamon roll-->
     <img 
       src = "../assets/products/original-cinnamon-roll.jpg"
       alt = "original cinnamon roll"
       class = "productimagedetail"
     />
-   
-    
-    
-     
+
     <div class="dropDownSection">
+
       <p class="customize">Customize our delicious, hand-made cinammon roll to your liking!</p>
-      <p class="options">Glazing:</p>
-      <!--Glazing drop down menu-->
-        <select class="dropdown">
-          <option>Keep original</option>
-          <option>Sugar milk</option>
-          <option>Vanilla milk</option>
-          <option>Double chocolate</option>
-        </select>
-      <p class="options">Pack size:</p>
-      <!--Pack size dropdown menu-->
-        <select class="dropdown">
-          <option>1</option>
-          <option>3</option>
-          <option>6</option>
-          <option>12</option>
-        </select>
+      <div class="dropdowncontainer">
+        <p class="options">Glazing:</p>
+        <!--Glazing drop down menu-->
+          <select class="dropdown">
+            <option>Keep original</option>
+            <option>Sugar milk</option>
+            <option>Vanilla milk</option>
+            <option>Double chocolate</option>
+          </select>
+        <p class="options">Pack size:</p>
+        <!--Pack size dropdown menu-->
+          <select class="dropdown">
+            <option>1</option>
+            <option>3</option>
+            <option>6</option>
+            <option>12</option>
+          </select>
+      </div>
+
+      <div class="addToCart">
+        <!--Price and add to cart button-->
+        <p class="detailPrice">$2.49</p>
+        <button type="button" class="addToCartButton"> Add to cart</button>
+      </div>
+    
     </div>
-    <div class="addToCart">
-      <!--Price and add to cart button-->
-      <p class="detailPrice">$2.49<span><button type="button"> Add to cart</button></span></p>
-    </div>
+
   </div>
 
 

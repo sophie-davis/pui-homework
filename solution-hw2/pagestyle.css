@@ -18,58 +18,42 @@ a {
 }
 /*Setting hr values*/
 hr {
-    width: auto;
-    height: 3px;
+    margin: 0px;
+    width: 100%;
+    height: 5px;
     background-color: black;
+    border: 0px;
+    align-content: right;
 }
 /*Setting header 1 product values*/
-h1.product {
-    width: fit-content;
-    height: auto;
-    margin: auto;
+h1 {
     font-weight: normal;
     color: black;
     text-decoration: none;
-}
-/*Setting header 1 cart values*/
-h1.cart {
+    text-align: right;
     width: fit-content;
-    height: auto;
-    margin: auto;
-    font-weight: normal;
-    color: black;
-    text-decoration: none;
-    padding-top: 5px;
 }
+
 /*Setting product hover values*/
-.product:hover {
-    background-color: yellow;
-    font-weight: bold;
-    color: black;
-}
-/*Setting cart hover values*/
-.cart:hover{
+h1:hover {
     background-color: yellow;
     font-weight: bold;
     color: black;
 }
 /*Setting header2 values*/
 h2 {
-    text-align: center;
+    text-align: left;
     font-weight: normal;
-    font-size: 25;
+    font-size: 35px;
     text-decoration: none;
     color: black;
 }
 /*Setting productCard values*/
 .productCard {
-    width: 35%;
-    margin: auto;
-    line-height: 3px;
-    padding-top: 15px;
-    padding-bottom: 10px;
     text-align: left;
+    padding: 0.5%;
 }
+
 /*Setting product card hover values*/
 .productCard:hover {
     background-color: yellow;
@@ -77,11 +61,10 @@ h2 {
 }
 /*Setting product images values*/
 .productimages{
-    width: 400px;
-    height: 400px;
+    width: 285px;
+    height: 285px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     border: 3px solid black;
 }
 /*Setting price values*/
@@ -89,14 +72,14 @@ p.price {
     text-decoration: underline;
     color: black;
     text-align: left;
-    padding: 5px;
     font-size: 20px;
+    width: 285px;
 }
 /*Setting cost values*/
 p.cost {
     text-align: left;
-    padding: 5px;
     font-size: 20px;
+    width: 285px;
 }
 /*Setting detail card values*/
 .detailCard{
@@ -109,14 +92,14 @@ p.cost {
     width: 600px;
     height: 600px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin:none;
     border: 5px solid;
 }
 /*Setting drop down section values*/
 .dropDownSection {
-    margin: auto;
+    margin: none;
     width: 20%;  /* originially fit-content*/
+    padding: 2%;;
 }
 /*Setting paragraph values*/
 p {
@@ -124,10 +107,8 @@ p {
 }
 /*Setting customize values*/
 .customize {
-    margin: auto;
     width: 100%;
-    text-align: left;
-    padding-top: 2%;
+    line-height: 175%;
 }
 /*Setting options values*/
 .options{
@@ -142,33 +123,33 @@ p {
 }
 /*Setting add to cart vaues*/
 .addToCart{
-    margin: auto;
-    text-align: center;
-    width: 20%;
-    padding:5%;
+    margin: none;
+    width: 100%;
+    padding-top: 15%;
 }
 /*Setting detail price value*/
 p.detailPrice{
     font-weight: bold;
+    padding: 10%;
 }
 /*Setting button values*/
-button{
-    float:right;
+button.addToCartButton{
     width: 50%;
-    padding: 2%;
+    height: 30%;
+    font-weight: bold;
+    font-size: inherit;
 }
 /*Setting click hover value*/
 button:hover{
     background-color: yellow;
 }
+.shoppingContainer{
+    margin-left: 35%;
+    margin-right: 5%;
+}
 /*Setting cart card values*/
 .cartCard{
-    line-height: 3px;
-    width: 30%;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    line-height: 3px;
+    line-height: 3px; 
 }
 /*Setting product image cart values*/
 .productimagecart {
@@ -178,29 +159,29 @@ button:hover{
     margin: auto;
     border: 5px solid;
 }
+.orderDetailsContainer{
+    width: 100%;
+    height: 200px;
+}
 .orderDetails{
-    margin: auto;
-    width:fit-content;
-    text-align: center;
-    padding: 5%;
+   padding-left: 5%;
+   width: 100%;
+   line-height: normal;
 }
 .total{
-    margin: auto;
     width:fit-content;
-    padding: 2%;
+    padding-left: 10%;
 }
 /*Setting remove values*/
 .remove{
-    font-size: 10px;
+    font-size: 20px;
+    font-weight:bold;
     text-decoration: underline;
     width: fit-content;
-    text-align: center;
-    margin: auto;
-    padding: 3%;
 }
 /*Setting shopping hr line value*/
 hr.shopping{
-    width:70%;
+    width:100%;
 }
 /*Setting checkout values*/
 .checkout{
@@ -210,21 +191,74 @@ hr.shopping{
     display: block;
     line-height: 300%;
 }
+p.totalWord{
+    width: fit-content;
+    padding-left: 30%;
+}
 p.totalPrice{
-    margin: auto;
     width: fit-content;
 }
 button.checkoutButton {
-    align-items: center;
-    width: 100%;
+    width: 20%;
     padding:2%;
-    display: block;
+    font-weight: bold;
+    font-size: inherit;
 }
 button.checkoutButton:hover{
     background-color: yellow;
 }
 
 
+/*end of base styles*/
+
+
+
+.pageHeader{
+    display: flex;
+    gap: 1em;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.titleKeywords{
+   display: flex;
+   justify-content: flex-end;
+   gap: 7em;
+   margin-right: 5%;
+}
+
+hr.titleHeader{
+    display: flex;
+    align-self: right;
+}
+.productCardParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:start;
+}
+
+.detailCard{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dropDownSection{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.addToCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
@@ -242,31 +276,44 @@ button.checkoutButton:hover{
 
 
 
+.shoppingContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
+.cartCard{
+    display: flex;
+}
+.imageCartCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
 
+.orderDetailsContainer{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
 
+.orderDetails{
+    align-self:auto;
+}
 
+.totalCheckoutPrice{
+    display: flex;
+    justify-content: right;
+}
 
+.totalWord{
+    flex-grow: 1;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.checkoutButton{
+    align-self: flex-end;
+}
 
 
 
