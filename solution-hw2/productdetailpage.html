@@ -9,103 +9,77 @@
     <!--The title that will appear on the tab in my browser-->
     <title>Product Detail Page</title>
   </head>
- 
- 
- 
- 
- 
   <body>
+    <!--setting up for my header flex container-->
     <div class="pageHeader">
-      
-        <!--<div class="logoFlex"></div>-->
-        <!--Displaying the Bun Bun logo and linking to the product gallery page-->
-        <a href="./index.html">
-          <img 
-            src = "../assets/logo/logo-01.svg"
-            alt = "logo"
-            class = "logo"
-          />
-          </a>
-        <!--</div>-->
-        
-        <div class="titleContainer">
-          <div class="titleKeywords">
-            <h1 class="product">
-              <!--Linking the Product line to this main product gallery-->
-              <a href="./index.html">PRODUCTS</a>
-            </h1>
-            <h1 class="cart">
-              <!--Linking the Cart line to the shopping cart page-->
-              <a href="./shoppingcartpage.html">CART</a>
-            </h1>
-          </div>
-          <div class="titleHeader">
-            <!--Drawing the dividing line-->
-            <hr>
-          </div>
-          <h2>Original cinammon roll</h2>
+      <!--Displaying the Bun Bun logo and linking to the product gallery page-->
+      <a href="./index.html">
+        <img 
+          src = "../assets/logo/logo-01.svg"
+          alt = "logo"
+          class = "logo"
+        />
+      </a>
+      <!--setting up for my flex box for my 'products', 'cart', hr, and page title-->  
+      <div class="titleContainer">
+        <!--setting up for my flex box for my 'products', and 'cart'--> 
+        <div class="titleKeywords">
+          <!--product header--> 
+          <h1 class="product">
+            <!--Linking the Product line to this main product gallery-->
+            <a href="./index.html">PRODUCTS</a>
+          </h1>
+          <!--cart header-->
+          <h1 class="cart">
+            <!--Linking the Cart line to the shopping cart page-->
+            <a href="./shoppingcartpage.html">CART</a>
+          </h1>
         </div>
-  
-  
+        <div class="titleHeader">
+          <!--Drawing the dividing line-->
+          <hr>
+        </div>
+        <h2>Original cinammon roll</h2>
       </div>
-    
-
-
-
-
-  <div class="detailCard">
-
-    <!--Picture of the cinnamon roll-->
-    <img 
-      src = "../assets/products/original-cinnamon-roll.jpg"
-      alt = "original cinnamon roll"
-      class = "productimagedetail"
-    />
-
-    <div class="dropDownSection">
-
-      <p class="customize">Customize our delicious, hand-made cinammon roll to your liking!</p>
-      <div class="dropdowncontainer">
-        <p class="options">Glazing:</p>
-        <!--Glazing drop down menu-->
+    </div>
+    <!--setting up a container for the flex box that will include all of the main content on the details page-->
+    <div class="detailCard">
+      <!--Picture of the cinnamon roll-->
+      <img 
+        src = "../assets/products/original-cinnamon-roll.jpg"
+        alt = "original cinnamon roll"
+        class = "productimagedetail"
+      />
+      <!--setting up a container for my flex box that will contain all of the main written words on this page on the right of the picture-->
+      <div class="dropDownSection">
+        <p class="customize">Customize our delicious, hand-made cinammon roll to your liking!</p>
+        <!--setting a container to contain the two dropdown menus on the right of the picture-->
+        <div class="dropdowncontainer">
+          <p class="options">Glazing:</p>
+          <!--Glazing drop down menu content-->
           <select class="dropdown">
             <option>Keep original</option>
             <option>Sugar milk</option>
             <option>Vanilla milk</option>
             <option>Double chocolate</option>
           </select>
-        <p class="options">Pack size:</p>
-        <!--Pack size dropdown menu-->
+          <p class="options">Pack size:</p>
+          <!--Pack size dropdown menu content-->
           <select class="dropdown">
             <option>1</option>
             <option>3</option>
             <option>6</option>
             <option>12</option>
           </select>
+        </div>
+        <!--creating a container for my flex box to include the cost and add to cart button-->
+        <div class="addToCart">
+          <!--Price-->
+          <p class="detailPrice">$2.49</p>
+          <!--add to cart button-->
+          <button type="button" class="addToCartButton"> Add to cart</button>
+        </div>
       </div>
-
-      <div class="addToCart">
-        <!--Price and add to cart button-->
-        <p class="detailPrice">$2.49</p>
-        <button type="button" class="addToCartButton"> Add to cart</button>
-      </div>
-    
     </div>
-
-  </div>
-
-
-
-  <br>
-
-
-
-
-  
-  
-  
-
-
-
-</body>
+  </body>
 </html>
