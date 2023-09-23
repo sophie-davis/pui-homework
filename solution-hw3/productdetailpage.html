@@ -57,12 +57,12 @@
         <!--setting a container to contain the two dropdown menus on the right of the picture-->
         <div class="dropdowncontainer">
           <p class="options">Glazing:</p>
-          <!--Glazing drop down menu content-->
+          <!--Glazing drop down menu, and the computeTotalPrice function is called when the user changes their glazing option dropdown menu selection-->
           <select class="dropdown" id="glazingOptions" onchange= "computeTotalPrice(this)">
           <!--<select class="dropdown" id="glazingOptions" onchange="glazingChange(this); grandTotal(this);">-->
           </select>
           <p class="options">Pack size:</p>
-          <!--Pack size dropdown menu content-->
+          <!--Pack size drop down menu, and the computeTotalPrice function is called when the user changes their pack size dropdown menu selection-->
           <select class="dropdown" id="packSelect" onchange="computeTotalPrice(this)">
           <!--<select class="dropdown" id="packSelect" onchange="packingChange(this); grandTotal(this);">-->
           </select>
