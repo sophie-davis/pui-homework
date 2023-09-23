@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-
+​
 <html>
-    <head>
-        <title> PUI-NOTE Exercise 1</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <div class="notecard">
+  <head>
+    <title>PUI-NOTE Exercise 1</title>
+    <link rel="stylesheet" href="flexstyle.css" />
+  </head>
+​
+  <body>
+    <div class="notecard">
+      <div class="first-column">
+        <div class="first-column-first-row note-contents">
+          <div style="width: 150px">
             <img
-            src="https://natashaskitchen.com/wp-content/uploads/2020/05/Vanilla-Cupcakes-3.jpg"
-            alt="cupcake"
-            class="note-image"
+              src="https://studyfinds.org/wp-content/uploads/2019/07/adorable-animal-cat-751050-816x520.jpg"
+              alt="fierce cat staring at you"
+              class="note-image"
             />
+          </div>
+          <div style="padding-left: 20px">
             <div class="notecard-title">
-                <p>Cupcakes are better with sprinkles.</p>
+              <p>
+                Cat suggest new way to specify style attributes for HTML pages
+              </p>
             </div>
-            <div class="notecard-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a venenatis ex, sed cursus dui. Vestibulum mauris augue, aliquam vel nunc in, porta congue lectus. Proin ut felis aliquet, placerat nunc a, molestie neque. Morbi rutrum justo non pellentesque pretium. In maximus risus ante, eget vehicula metus rhoncus nec. Duis fermentum libero lacinia, auctor mauris non, consequat augue. Cras et consequat felis, sit amet ornare justo. Sed sollicitudin, dolor vitae convallis convallis, nunc ante facilisis felis, ut pellentesque lorem diam et purus.</p>
+            <div class="note-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                tristique nulla eu elit luctus efficitur. Suspendisse vitae diam
+                tortor. Duis ultrices metus et velit consectetur, vel
+                condimentum nisl viverra. Orci varius natoque penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus. Cras
+                pellentesque velit ante, sed scelerisque metus congue ac. Cras
+                placerat nibh at elit tincidunt maximus. Aenean vulputate
+                gravida dolor, facilisis consequat justo
+              </p>
             </div>
-            <button class="button">x</button>
+          </div>
         </div>
-        <div class="date"><p>06 Sept</p></div>
-    </body>
+        <div class="first-column-second-row date"><p>6th September</p></div>
+      </div>
+        <select name="" id="title-change-dropdown" onchange="updateTitle()">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      <div class="second-column green-banner"></div>
+    </div>
+  </body>
 </html>

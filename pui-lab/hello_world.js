@@ -1,5 +1,5 @@
 
-let assisgmentScores = [30, 20, 50];
+/*let assisgmentScores = [30, 20, 50];
 
 //totalScore = assisgmentScores[0] + assisgmentScores[1] + assisgmentScores[2];
 

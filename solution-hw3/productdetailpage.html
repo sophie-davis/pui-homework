@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--Setting language to English-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--Linking to my css stylesheet-->
+    <link rel="stylesheet" 
+          href="pagestyle.css"/>
+    <!--The title that will appear on the tab in my browser-->
+    <title>Product Detail Page</title>
+    <script src="bakery.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!--setting up for my header flex container-->
+    <div class="pageHeader">
+      <!--Displaying the Bun Bun logo and linking to the product gallery page-->
+      <a href="./index.html">
+        <img 
+          src = "../assets/logo/logo-01.svg"
+          alt = "logo"
+          class = "logo"
+        />
+      </a>
+      <!--setting up for my flex box for my 'products', 'cart', hr, and page title-->  
+      <div class="titleContainer">
+        <!--setting up for my flex box for my 'products', and 'cart'--> 
+        <div class="titleKeywords">
+          <!--product header--> 
+          <h1 class="product">
+            <!--Linking the Product line to this main product gallery-->
+            <a href="./index.html">PRODUCTS</a>
+          </h1>
+          <!--cart header-->
+          <h1 class="cart">
+            <!--Linking the Cart line to the shopping cart page-->
+            <a href="./shoppingcartpage.html">CART</a>
+          </h1>
+        </div>
+        <div class="titleHeader">
+          <!--Drawing the dividing line-->
+          <hr>
+        </div>
+        <h2>Original cinammon roll</h2>
+      </div>
+    </div>
+    <!--setting up a container for the flex box that will include all of the main content on the details page-->
+    <div class="detailCard">
+      <!--Picture of the cinnamon roll-->
+      <img 
+        src = "../assets/products/original-cinnamon-roll.jpg"
+        alt = "original cinnamon roll"
+        class = "productimagedetail"
+      />
+      <!--setting up a container for my flex box that will contain all of the main written words on this page on the right of the picture-->
+      <div class="dropDownSection">
+        <p class="customize">Customize our delicious, hand-made cinammon roll to your liking!</p>
+        <!--setting a container to contain the two dropdown menus on the right of the picture-->
+        <div class="dropdowncontainer">
+          <p class="options">Glazing:</p>
+          <!--Glazing drop down menu content-->
+          <select class="dropdown" id="glazingOptions" onchange= "computeTotalPrice(this)">
+          <!--<select class="dropdown" id="glazingOptions" onchange="glazingChange(this); grandTotal(this);">-->
+          </select>
+          <p class="options">Pack size:</p>
+          <!--Pack size dropdown menu content-->
+          <select class="dropdown" id="packSelect" onchange="computeTotalPrice(this)">
+          <!--<select class="dropdown" id="packSelect" onchange="packingChange(this); grandTotal(this);">-->
+          </select>
+        </div>
+        <!--creating a container for my flex box to include the cost and add to cart button-->
+        <div class="addToCart">
+          <!--Price-->
+          <p class="detailPrice" id="detailPrice">$2.49</p>
+          <!--add to cart button-->
+          <button type="button" class="addToCartButton"> Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
