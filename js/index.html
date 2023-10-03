@@ -1,29 +1,30 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Select Example</title>
-
-    <script defer src="app.js"></script>
+    <title> A List of Animals </title>
   </head>
 
   <body>
-    <h2>Learn About Cars</h2>
-    <!-- We are using integer values for each option in the select. So
-         no matter what name we put between the <option> tags, the
-         select's value property will be the number. BUT the value is
-         in string format, so we need to convert it to an integer in
-         JavaScript. -->
-    <!-- We could also use unique string identifiers here like "toyota",
-         "vw", "chevy", etc. Either way, it's good practice to make sure
-         these values are unique. -->
-    <select id="car-select">
-      <option value="0">Toyota Corolla</option>
-      <option value="1">VW Beetle</option>
-      <option value="2">Chevy Corvette</option>
-    </select>
-    <h4 id="car-title">none</h4>
-    <p id="car-info"></p>
+    <h1>
+      Learn about our animals:
+    </h1>
+
+    <!-- Each of these links goes to the same HTML page, but with a different URL parameter. -->
+    <ul>
+      <li>
+        <a href="./details.html?animal=zebra">Zebra</a>
+      </li>
+      <li>
+        <a href="./details.html?animal=tiger">Tiger</a>
+      </li>
+      <li>
+        <a href="./details.html?animal=frog">Frog</a>
+      </li>
+      <li>
+        <a href="./details.html?animal=rhino">Rhino</a>
+      </li>
+    </ul>
+
   </body>
 </html>

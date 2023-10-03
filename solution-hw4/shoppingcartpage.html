@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--Setting the language to English-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--Linking to my css stylesheet-->
+    <link rel="stylesheet" 
+          href="pagestyle.css"/>
+    <!--The title that will appear on the tab in my browser-->
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <!--setting up for my header flex container-->
+    <div class="pageHeader">
+      <!--Displaying the Bun Bun logo and linking to the product gallery page-->
+      <a href="./index.html">
+        <img 
+          src = "../assets/logo/logo-01.svg"
+          alt = "logo"
+          class = "logo"
+        />
+      </a> 
+      <!--setting up for my flex box for my 'products', 'cart', hr, and page title-->         
+      <div class="titleContainer">
+        <!--setting up for my flex box for my 'products', and 'cart'--> 
+        <div class="titleKeywords">
+          <!--product header--> 
+          <h1 class="product">
+            <!--Linking the Product line to this main product gallery-->
+            <a href="./index.html">PRODUCTS</a>
+          </h1>
+          <!--cart header-->
+          <h1 class="cart">
+            <!--Linking the Cart line to the shopping cart page-->
+            <a href="./shoppingcartpage.html">CART</a>
+          </h1>
+        </div>
+        <div class="titleHeader">
+          <!--Drawing the dividing line-->
+          <hr>
+        </div>
+        <h2>Shopping cart</h2>
+      </div>
+    </div>
+    <!--creating the container for my flex box that will contain everything below the header on the cart page-->
+    <div class="shoppingContainer">
+      <!--setting up a container to use as a flex box to contain each individual order item and information-->
+      <div class="cartCard">
+        <!--setting up a container to use as a flex box with the image and the 'remove' word-->
+        <div class="imageCartCard">
+          <!--image of order item-->
+          <img 
+            src = "../assets/products/original-cinnamon-roll.jpg"
+            alt = "original cinnamon roll"
+            class = "productimagecart"
+          />
+          <!--'remove' word-->
+          <p class="remove">Remove</p>
+        </div>
+        <!--setting up a container for my flex box that will contain everything to the right of the image-->
+        <div class="orderDetailsContainer">
+          <!--the three rows of words to the right of the image-->
+          <div class="orderDetails">
+          <p>Originial Cinnamon Roll</p>
+          <p>Glazing: Keep original</p>
+          <p>Pack Size: 1</p>
+        </div>
+        <!--the price to the right of the images-->
+        <div class="total">
+          <p>$2.49</p>
+        </div>
+      </div>
+    </div>
+    <!--setting up a container to use as a flex box to contain each individual order item and information-->
+    <div class="cartCard">
+      <!--setting up a container to use as a flex box with the image and the 'remove' word-->
+      <div class="imageCartCard">
+        <!--image of order item-->
+        <img 
+          src = "../assets/products/double-chocolate-cinnamon-roll.jpg"
+          alt = "double chocolate cinnamon roll"
+          class = "productimagecart"
+        />
+        <!--'remove' word-->
+        <p class="remove">Remove</p>
+      </div>
+      <!--setting up a container for my flex box that will contain everything to the right of the image-->
+      <div class="orderDetailsContainer">
+        <!--the three rows of words to the right of the image-->
+        <div class="orderDetails">
+          <p>Double Chocolate Cinnamon Roll</p>
+          <p>Glazing: Sugar milk</p>
+          <p>Pack Size: 6</p>
+        </div>
+        <!--the price to the right of the images-->
+        <div class="total">
+          <p>$27.45</p>
+        </div>
+      </div>
+    </div>
+    <!--Dividing line at the bottom of the page-->
+    <hr class="shopping">
+    <!--creating a container for my flex box that contains the 'total' word and the total cost number-->
+    <div class="totalCheckoutPrice">
+      <!--'total' word-->
+      <p class="totalWord">Total</p>
+      <!--total price of order-->
+      <p class="totalPrice">$29.94</p>
+    </div>
+      <!--checkout button-->
+      <button type="button" class="checkoutButton">Checkout</button>
+    </div>
+  </body>
+</html>
