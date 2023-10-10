@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--Setting the language to English-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--Linking to my css stylesheet-->
+    <link rel="stylesheet" 
+          href="pagestyle.css"/>
+    <!--The title that will appear on the tab in my browser-->
+    <title>Shopping Cart</title>
+    <!--<script src="bakery.js" type="text/javascript" defer></script>-->
+    <!--<script src="rollsData.js" type="text/javascript" defer></script>-->
+    <script src="cart.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!--setting up for my header flex container-->
+    <div class="pageHeader">
+      <!--Displaying the Bun Bun logo and linking to the product gallery page-->
+      <a href="./index.html">
+        <img 
+          src = "../assets/logo/logo-01.svg"
+          alt = "logo"
+          class = "logo"
+        />
+      </a> 
+      <!--setting up for my flex box for my 'products', 'cart', hr, and page title-->         
+      <div class="titleContainer">
+        <!--setting up for my flex box for my 'products', and 'cart'--> 
+        <div class="titleKeywords">
+          <!--product header--> 
+          <h1 class="product">
+            <!--Linking the Product line to this main product gallery-->
+            <a href="./index.html">PRODUCTS</a>
+          </h1>
+          <!--cart header-->
+          <h1 class="cart">
+            <!--Linking the Cart line to the shopping cart page-->
+            <a href="./shoppingcartpage.html">CART</a>
+          </h1>
+        </div>
+        <div class="titleHeader">
+          <!--Drawing the dividing line-->
+          <hr>
+        </div>
+        <h2>Shopping cart</h2>
+      </div>
+    </div>
+
+
+
+    
+    <!--creating the container for my flex box that will contain everything below the header on the cart page-->
+    <div class="shoppingContainer">
+      <!--Dividing line at the bottom of the page-->
+      <hr class="shopping">
+      <!--creating a container for my flex box that contains the 'total' word and the total cost number-->
+      <div class="totalCheckoutPrice">
+        <!--'total' word-->
+        <p class="totalWord">Total</p>
+        <!--total price of order-->
+        <p class="totalPrice">$29.94</p>
+      </div>
+      <!--checkout button-->
+      <button type="button" class="checkoutButton">Checkout</button>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--Setting the language to English-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--Linking to my css stylesheet-->
+    <link rel="stylesheet" 
+      href="pagestyle.css"/>
+    <!--The title that will appear on the tab in my browser-->
+    <title>Product Gallery</title>
+  </head>
+  <body>
+    <!--setting up for my header flex container-->
+    <div class="pageHeader">
+      <!--Displaying the Bun Bun logo and linking to the product gallery page-->
+      <a href="./index.html">
+        <img 
+          src = "../assets/logo/logo-01.svg"
+          alt = "logo"
+          class = "logo"
+        />
+      </a>   
+      <!--setting up for my flex box for my 'products', 'cart', hr, and page title-->   
+      <div class="titleContainer">
+        <!--setting up for my flex box for my 'products', and 'cart'--> 
+        <div class="titleKeywords">
+          <!--product header--> 
+          <h1 class="product">
+            <!--Linking the Product line to this main product gallery-->
+            <!--<a href="./index.html">PRODUCTS</a>   testing below, this one is the real-->
+            <a href="./index.html">PRODUCTS</a>
+          </h1>
+          <!--cart header--> 
+          <h1 class="cart">
+            <!--Linking the Cart line to the shopping cart page-->
+            <a href="./shoppingcartpage.html">CART</a>
+          </h1>
+        </div>
+        <div class="titleHeader">
+          <!--Drawing the dividing line-->
+          <hr>
+        </div>
+        <h2>Our hand-made cinnamon rolls</h2>
+      </div>
+    </div>
+    <!--setting up a container for my flex box that will hold all of my cinnamon rolls-->
+    <div class="productCardParent">
+      <!--creating a card to group the image, description, and price-->
+      <div class="productCard">
+        <!--Linking the product section to the product detail page and including an image-->
+        <a href="./productdetailpage.html?roll=Original">
+          <img 
+            src = "../assets/products/original-cinnamon-roll.jpg"
+            alt = "original cinnamon roll"
+            class = "productimages"
+          />
+          <p class="price">Originial cinnamon roll</p>
+        </a>
+        <p class="cost">$2.49</p>
+      </div>
+      <!--creating a card to group the image, description, and price-->
+      <div class="productCard">
+        <!--Linking the product section to the product detail page and including an image-->
+        <a href="./productdetailpage.html?roll=Apple">
+          <img 
+            src = "../assets/products/apple-cinnamon-roll.jpg"
+            alt = "apple cinnamon roll"
+            class = "productimages"
+          />
+          <p class="price">Apple cinnamon roll</p>
+        </a>
+        <p class="cost">$3.49</p>
+      </div>
+      <!--creating a card to group the image, description, and price-->
+      <div class="productCard">
+        <!--Linking the product section to the product detail pageand including an image-->
+        <a href="./productdetailpage.html?roll=Raisin">
+          <img 
+            src = "../assets/products/raisin-cinnamon-roll.jpg"
+            alt = "raisin cinnamon roll"
+            class = "productimages"
+          />
+          <p class="price">Raisin cinnamon roll</p>
+        </a>
+        <p class="cost">$2.99</p>
+      </div>
+      <!--creating a card to group the image, description, and price-->
+      <div class="productCard">
+        <!--Linking the product section to the product detail page and including an image-->
+        <a href="./productdetailpage.html?roll=Walnut">
+          <img 
+            src = "../assets/products/walnut-cinnamon-roll.jpg"
+            alt = "walnut cinnamon roll"
+            class = "productimages"
+          />
+          <p class="price">Walnut cinnamon roll</p>
+        </a>
+        <p class="cost">$3.49</p>
+      </div>
+      <!--creating a card to group the image, description, and price-->
+      <div class="productCard">
+        <!--Linking the product section to the product detail page and including an image-->
+        <a href="./productdetailpage.html?roll=Double-Chocolate">
+          <img 
+            src = "../assets/products/double-chocolate-cinnamon-roll.jpg"
+            alt = "double chocolate cinnamon roll"
+            class = "productimages"
+          />
+          <p class="price">Double-chocoloate cinnamon roll</p>
+        </a>
+        <p class="cost">$3.99</p>
+      </div>
+      <!--creating a card to group the image, description, and price-->
+      <div class="productCard">
+        <!--Linking the product section to the product detail page and including an image-->
+        <a href="./productdetailpage.html?roll=Strawberry">
+          <img 
+            src = "../assets/products/strawberry-cinnamon-roll.jpg"
+            alt = "strawberry cinnamon roll"
+            class = "productimages"
+          />
+          <p class="price">Strawberry cinnamon roll</p>
+        </a>
+        <p class="cost">$3.99</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
