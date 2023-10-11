@@ -47,12 +47,24 @@
     </div>
 
 
-
-    
+<div id = "newRoll-list">
+  <template id = "newRoll-template">
+    <div class="newRoll">
     <!--creating the container for my flex box that will contain everything below the header on the cart page-->
     <div class="shoppingContainer">
+      <p class="roll-type"></p>
+      <p class="glazing-type"></p>
+      <p class="pack-type"></p>
+      <p class="price-type"></p>
+      <img class = "productimagecart"/>
+      <p type = "button" class="delete">Remove</p>
       <!--Dividing line at the bottom of the page-->
-      <hr class="shopping">
+    </div>
+    </div>
+  </template>
+</div>
+
+<hr class="shopping">
       <!--creating a container for my flex box that contains the 'total' word and the total cost number-->
       <div class="totalCheckoutPrice">
         <!--'total' word-->
@@ -62,7 +74,6 @@
       </div>
       <!--checkout button-->
       <button type="button" class="checkoutButton">Checkout</button>
-    </div>
 
 
   </body>
