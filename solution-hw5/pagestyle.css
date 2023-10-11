@@ -227,7 +227,7 @@ button:hover{
     margin: none;
 }
 /*Setting the 'remove' word values on the cart page*/
-.remove{
+.delete{
     font-size: 20px;
     font-weight:bold;
     text-decoration: underline;
