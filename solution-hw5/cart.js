@@ -122,7 +122,6 @@ function createElement(newRoll) {
     const clone = template.content.cloneNode(true);
     //connecting this clone to my roll element
     newRoll.element = clone.querySelector('.newRoll');
-
     const btnDelete = newRoll.element.querySelector('.delete');
     btnDelete.addEventListener('click', () => {
         deleteRoll(newRoll);

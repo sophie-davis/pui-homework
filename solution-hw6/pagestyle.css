@@ -1,0 +1,266 @@
+/*Importing the Quicksand Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+/*Setting the body font to Quicksand, and the backups of Arial, Helvetica, and sans-serif*/
+body {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif
+}
+/*Setting anchor to black*/
+a {
+    text-decoration: none;
+    color:black
+}
+/*setting values of the page header container flex box*/
+.pageHeader{
+    display: flex;
+    gap: 1em;
+}
+/*setting values of everything to the right of the logo in the page header container flex box*/
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+/*setting values of the 'products' and 'cart' flex box*/
+.titleKeywords{
+    display: flex;
+    justify-content: flex-end;
+    gap: 7em;
+    margin-right: 5%;
+}
+/*setting values of the line at the top of the page*/
+hr.titleHeader{
+    display: flex;
+    align-self: right;
+}
+/*Setting logo values*/
+.logo{
+    width: 400px;
+    height: 400px;
+}
+/*Setting hr values for all pages*/
+hr {
+    margin: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border: 0px;
+    align-content: right;
+}
+/*Setting header 1 product values*/
+h1 {
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    width: fit-content;
+}
+/*Setting product hover header 1 values*/
+h1:hover {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+}
+/*Setting header2 values*/
+h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+}
+/*setting the values for the flex box that includes all of the cinnamon rolls on the gallery page*/
+.productCardParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:start;
+}
+/*Setting main gallery page product card values*/
+.productCard {
+    text-align: left;
+    padding: 0.5%;
+}
+/*Setting product card hover values*/
+.productCard:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+/*Setting main gallery page product image values*/
+.productimages{
+    width: 285px;
+    height: 285px;
+    display: block;
+    margin:auto;
+    border: 3px solid black;
+}
+/*Setting the main gallery cinnamon roll values*/
+p.price {
+    text-decoration: underline;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    width: 285px;
+}
+/*Setting the main gallery cinnamon roll cost values*/
+p.cost {
+    text-align: left;
+    font-size: 20px;
+    width: 285px;
+}
+/*Setting the flex box values for the detail page content below the header*/
+.detailCard{
+    margin: auto;
+    text-align: start;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*Setting product image detail page values*/
+#productimagedetail {
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin:none;
+    border: 5px solid;
+}
+/*Setting the whole flex box for the right side of the details page*/
+.dropDownSection {
+    margin: none;
+    width: 20%; 
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+/*Setting font size for all three pages*/
+p {
+    font-size: 20px;
+}
+/*Setting the values for the customize portion of the details page*/
+.customize {
+    width: 100%;
+    line-height: 175%;
+}
+/*Setting the values for the dropdown menu titles on the details page*/
+.options{
+    text-align: left;
+    padding-top: 2%;
+}
+/*Setting dropdown menu values*/
+.dropdown{
+    margin: auto;
+    width: 100%;
+    padding: 3%;
+}
+/*Setting values for the price and add to cart flex box on the details page*/
+.addToCart{
+    margin: none;
+    width: 100%;
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Setting values for the price on the details page*/
+p.detailPrice{
+    font-weight: bold;
+    padding: 10%;
+}
+/*Setting the add to cart button values*/
+button.addToCartButton{
+    width: 50%;
+    height: 30%;
+    font-weight: bold;
+    font-size: inherit;
+}
+/*Setting the add to cart button hover value*/
+button:hover{
+    background-color: yellow;
+}
+/*setting the value for the container with the information below the header on the shopping cart page*/
+.shoppingContainer{
+    margin-left: 35%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+/*Setting the values for the individual cards on the shopping cart page*/
+.cartCard{
+    line-height: 3px; 
+    display: flex;
+}
+/*setting the values for the image and the 'remove' word container on the cart page*/
+.imageCartCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+/*Setting shopping cart image values*/
+.productimagecart {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border: 5px solid;
+}
+/*setting the container for the shopping cart page card text*/
+.orderDetailsContainer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+/*setting the container for just the words in the cart page*/
+.orderDetails{
+   padding-left: 5%;
+   width: 100%;
+   line-height: normal;
+   align-self:auto;
+}
+/*setting the values for the item prices on the carts page*/
+.total{
+    width:fit-content;
+    padding-left: 10%;
+    margin: none;
+}
+/*Setting the 'remove' word values on the cart page*/
+.delete{
+    font-size: 20px;
+    font-weight:bold;
+    text-decoration: underline;
+    width: fit-content;
+}
+/*Setting shopping hr line value on the bottom of the cart page*/
+hr.shopping{
+    width:100%;
+}
+/*setting the container for the 'total' word and the total price on the cart page*/
+.totalCheckoutPrice{
+    display: flex;
+    justify-content: right;
+}
+/*setting the values for the word 'total' on the cart page*/
+p.totalWord{
+    width: fit-content;
+    padding-left: 30%;
+    flex-grow: 1;
+}
+/*setting the values for the grand total price on the cart page*/
+p.totalPrice{
+    width: fit-content;
+}
+/*setting the values for the checkout button on the cart page*/
+button.checkoutButton {
+    width: 20%;
+    padding:2%;
+    font-weight: bold;
+    font-size: inherit;
+    align-self: flex-end;
+}
+/*setting the hover values for the checkout button on the cart page*/
+button.checkoutButton:hover{
+    background-color: yellow;
+}
