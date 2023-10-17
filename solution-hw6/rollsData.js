@@ -1,5 +1,5 @@
+//checking if my cart can be found in local storage and if not initializing an array
 const cart = JSON.parse(localStorage.getItem('storedCart'))  || [];
-
 //setting up my rolls database in JSON format to include the price and image for each type of roll//
 const rolls = {
     "Original": {
@@ -56,10 +56,7 @@ function computeTotalPrice(element) {
   //const grandTotal = "$" + parseFloat((rolls[chosenRoll] + glazingPrice) * packPrice).toFixed(2);
     //setting the innerHTML of the displayed total cost on the product detail page to equal the grandTotal//
   document.getElementById("detailPrice").innerHTML = grandTotal;
-  //saveToLocalStorage();
 }
-//creating an array called cart//
-//const cart = [];
 //declaring the addToCart function that will create the array that I see when I press the add to cart button on the product detail page//
 function addToCart() {
   //setting chosenGlazing equal to the selected dropdown item in my glazing dropdown//
@@ -84,20 +81,14 @@ function addToCart() {
   let newRoll = new Roll(chosenRoll, chosenGlazing, chosenPack, chosenPrice);
   //pushing the newRoll to my cart array//
   cart.push(newRoll);
+  //saving my newRoll to local storage
   saveToLocalStorage();
   return cart;
-  //printing out my cart array//
-  
 }
-
+//turning my cart set into an array and turning it into a string of text and then saving it to the local storage
 function saveToLocalStorage () {
     console.log(cart);
     const cartArrayString = JSON.stringify(cart);
     console.log(cartArrayString);
     window.localStorage.setItem('storedCart', cartArrayString);
 }
-
-
-
-
-

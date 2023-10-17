@@ -1,7 +1,6 @@
+//setting my set to be called cart
 let cart = new Set();
-
-////TESSTING///////// took this from the rollsData page/////
-
+//turning my cart set into an array and turning it into a string of text and then saving it to the local storage
 function saveToLocalStorage () {
     const cartArray = Array.from(cart);
     console.log(cartArray);
@@ -9,8 +8,6 @@ function saveToLocalStorage () {
     console.log(cartArrayString);
     window.localStorage.setItem('storedCart', cartArrayString);
 }
-
-
 //setting up my rolls database in JSON format to include the price and image for each type of roll
 const rolls = {
     "Original": {
@@ -76,65 +73,45 @@ class Roll {
       this.glazing = rollGlazing;
       this.size = packSize;
       this.basePrice = basePrice;
-
       this.element = null;
     }
 }
-
-
 //create array for total price
 let finalCart = [];
 //creating a new roll object and adding it to my cart set
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     const newRoll = new Roll (rollType, rollGlazing, packSize, basePrice);
     cart.add(newRoll);
-    //saveToLocalStorage();
-
     return newRoll;
 }
-
-
-
 //looping through the cart set and creating a DOM element for each roll object
 for (const newRoll of cart) {
     createElement(newRoll);
-    //saveToLocalStorage();
 }
-
-
-
-
 //adding the calculated order prices to my finalCart price array
 let totalCartPrice = 0;
-
+//retreiving the rolls from the local storage
 function retrieveFromLocalStorage() {
     const cartArrayString = localStorage.getItem('storedCart');
     const cartArray = JSON.parse(cartArrayString);
     console.log(cartArray);
+    //looping through my array of rolls to populate the cart page
     for (const cartData of cartArray) {
         const newRoll = addNewRoll(cartData.type, cartData.glazing, cartData.size, cartData.basePrice);
         createElement(newRoll);
     }
-
 }
-
+//calling the function automatically
 if (localStorage.getItem('storedCart') != null) {
     retrieveFromLocalStorage();
 }
-
+//adding the item prices to the total price at the bottom of the cart page
 for (const calculatePrice of finalCart) {
     totalCartPrice = totalCartPrice + parseFloat(calculatePrice);
-
 }
 document.querySelector('.totalPrice').innerText = "$" + parseFloat(totalCartPrice).toFixed(2);
-
-
-
-
 //taking my roll as an argument and updating the proper DOM element
 function createElement(newRoll) {
-    //saveToLocalStorage();
-
     //creating a clone of the roll template
     const template = document.querySelector('#newRoll-template');
     const clone = template.content.cloneNode(true);
@@ -144,20 +121,12 @@ function createElement(newRoll) {
     btnDelete.addEventListener('click', () => {
         deleteRoll(newRoll);
     });
-
     //adding the roll clone to the DOM
     const newRollListElement = document.querySelector('#newRoll-list');
     newRollListElement.append(newRoll.element);
     //populating the roll clone with the roll content
     updateElement(newRoll);
-    //saveToLocalStorage();
-
 }
-
-
-
-
-
 function updateElement (newRoll) {
     //getting the HTML element that needs updating
     const rollTypeElement = newRoll.element.querySelector('.roll-type');
@@ -177,11 +146,7 @@ function updateElement (newRoll) {
     rollBasePriceElement.innerText = "$" + calculatePrice;
     //setting the image source for my pictures
     rollImageElement.src = "../assets/products/" + rolls[newRoll.type].imageFile;
-    //saveToLocalStorage();
-
 }
-
-
 //function to conduct my deleting actions
 function deleteRoll(newRoll){
     //removing the roll DOM object 
@@ -192,7 +157,6 @@ function deleteRoll(newRoll){
     document.querySelector('.totalPrice').innerText = "$" + parseFloat(totalCartPrice).toFixed(2);
     //deleting the roll from my cart array
     cart.delete(newRoll);
+    //updating my local storage when I delete a roll from the cart
     saveToLocalStorage();
 }
-
-
