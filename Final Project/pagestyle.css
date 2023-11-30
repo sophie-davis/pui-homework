@@ -123,14 +123,14 @@ backface-visibility: hidden;
 
 path {
     stroke: white;
-    fill:pink !important;
+    fill: #B0B9A8 !important;
 
     transition: fill .4s ease;
     transform-origin: center center;
 }
 
 path:hover {
-    fill: red !important;
+    fill: #DCB482 !important;
     cursor: pointer;
     transform: scale(1.005, 1.005);
 }
@@ -155,12 +155,12 @@ path:hover {
     opacity: 0%;
     padding: 1rem;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 18px;
     position: fixed;
-    color: #F3F0E8;
-    font-family: "Quicksand";
-    width: 300px;
-    height: 450px;
+    color: #5E5E5E;
+    font-family: "Poppins";
+    background-color: #F3F0E8;
+    width: fit-content;
     transform: translateX(-50%);
     transition: opacity .4s ease;
     z-index: 1;
