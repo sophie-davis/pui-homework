@@ -1,0 +1,14 @@
+<svg width="384" height="120" viewBox="0 0 384 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="60" width="60" height="60" transform="rotate(90 60 0)" fill="#B0B9A8"/>
+<rect x="120" width="60" height="60" transform="rotate(90 120 0)" fill="#B0B9A8"/>
+<path d="M120 60V60C120 93.1371 93.1371 120 60 120V120L60 60L120 60Z" fill="#8F837A"/>
+<path d="M0 60V60C-1.44847e-06 93.1371 26.8629 120 60 120V120L60 60L0 60Z" fill="#8F837A"/>
+<path d="M192 60H222C238.569 60 252 73.4315 252 90V90C252 106.569 238.569 120 222 120H192V60Z" fill="#606C5A"/>
+<rect x="132" y="60" width="60" height="60" fill="#B0B9A8"/>
+<rect width="60" height="60" transform="matrix(-1 0 0 1 252 0)" fill="#B0B9A8"/>
+<path d="M192 0H162C145.431 0 132 13.4315 132 30V30C132 46.5685 145.431 60 162 60H192V0Z" fill="#606C5A"/>
+<path d="M264 120L324 60H264V120Z" fill="#DCB482"/>
+<path d="M384 120L324 60H384V120Z" fill="#DCB482"/>
+<path d="M324 0L384 60H324V0Z" fill="#DCB482"/>
+<path d="M324 0L264 60H324V0Z" fill="#DCB482"/>
+</svg>
