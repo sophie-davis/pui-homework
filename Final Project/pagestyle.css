@@ -144,11 +144,11 @@ path:hover {
 }
 
 .openingtitle{
-    color: #5E5E5E;
+    color: black;
     text-decoration: none;
     align-items: center;
     width: fit-content;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .arrow{
@@ -159,10 +159,142 @@ path:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:16px;
 }
 
 body{
-    background-color: #D5CABA;
+    background-color: #F3F0E8;
 }
+
+.card-title-flower,
+.card-title-bird,
+.card-title-capital,
+.card-title-city,
+.card-title-nickname,
+.card-title-statehood,
+.card-title-abbreviation,
+.card-title-musician,
+.card-title-food {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-text-flower,
+.card-text-bird,
+.card-text-capital,
+.card-text-city,
+.card-text-nickname,
+.card-text-statehood,
+.card-text-abbreviation,
+.card-text-musician,
+.card-text-food {
+    text-align: center;
+    font-size: 18px;
+}
+
+#carouselExampleControls{
+    padding-top:100px;
+}
+
+#stateTitle{
+    padding-top: 60px;
+}
+
+#us-map{
+    align-items: center;
+    padding-top: 68px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #F3F0E8;;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    font-weight: bold;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #E2DACF;
+    color: black;
+  }
+
+
+  
+  
+  .quiz-container {
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  #question-container {
+    margin-bottom: 20px;
+  }
+  
+  #question-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    height: 40px;
+    font-size: 16px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d2d2d2;
+  }
+  
+  #controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quiz-container {
+    width: 600px;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+
+
+
+
+
+ 
+  
+
+
+
 
 
