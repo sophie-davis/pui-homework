@@ -21,6 +21,12 @@ h1 {
     margin:auto;
     padding:0px;
 }
+@media (max-width: 500px) {
+.img-thumbnail {
+      max-height: 200px; 
+      max-width: 275px;
+    }
+  }
 /*main container for the content on my home page*/
 .container{
     margin: 20px;
@@ -41,13 +47,12 @@ path:hover {
 /*styling the us map on my map page*/
 #us-map {
     display: block;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 90%;
+    width: 90%;
+    height: 70%;
     align-items: center;
-    padding-top: 6%;
 }
 /*styling the box that has the state name on the map page*/
 #details-box {
@@ -232,4 +237,7 @@ button:hover {
 #left,
 #right {
     background-color: #f3f0e8;
+}
+.col-lg-1{
+    width: fit-content;
 }
