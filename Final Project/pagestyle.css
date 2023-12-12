@@ -15,61 +15,16 @@ h1 {
 }
 /*styling the images on my home page*/
 .img-thumbnail{
-    width: 450px;
-    height: 350px;
+    width: 350px;
+    height: 280px;
     display: block;
     margin:auto;
+    padding:0px;
 }
 /*main container for the content on my home page*/
 .container{
     margin: 20px;
 }
-/*styling my map on the map page*/
-/*
-.map {
-    display: block;
-    margin: auto;
-    width: 90%;
-    padding: 10px;
-}
-*/
-/*
-.flashcard{
-    width: 300px;
-    height: 400px;
-    display: flex;
-    margin:auto;
-    flex-direction: row;
-}
-*/
-/*
-.flashcarddeck{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items:start;
-    padding: 50px;
-}
-*/
-/*
-.arrows{
-    width: 5%;
-    height: 5%;
-    margin-top: 175px;
-}
-*/
-/*
-.stateheader{
-    display: flex;
-    margin: fit-content;
-    flex-direction: row;
-}
-*/
-/*
-.flags{
-    padding: 10%;
-}
-*/
 /*styling the borders of the states*/
 path {
     stroke: #F3F0E8;
@@ -83,21 +38,16 @@ path:hover {
     cursor: pointer;
     transform: scale(1.005, 1.005);
 }
-/* #map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 /*styling the us map on my map page*/
 #us-map {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     height: 90%;
     align-items: center;
-    padding-top: 68px;
+    padding-top: 6%;
 }
 /*styling the box that has the state name on the map page*/
 #details-box {
@@ -152,7 +102,7 @@ path:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:16px;
+    padding-top:16px;
 }
 /*setting the background color of my homepages*/
 body{
@@ -256,25 +206,11 @@ button {
 button:hover {
     background-color: #d2d2d2;
 } 
-/*
-  #controls-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-*/
 /*styling the navigation bar*/
 .topnav{
     position: relative;
     z-index: 9999;
 }
-/*
-#controls-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
 /*styling the button used to start the quiz on the quiz page*/
 #start-button {
     padding: 10px 20px;
