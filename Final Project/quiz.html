@@ -2,37 +2,42 @@
 <!--Setting the language to English-->
 <html lang="en">
   <head>
+    <!--character encoding to UTF-8-->
     <meta charset="UTF-8">
     <!--Linking to my css stylesheet-->
     <link rel="stylesheet" href="pagestyle.css"/>
-  <title>Quiz</title>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-  <script src="quiz.js" type="text/javascript" defer></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  
-</head>
-<body>
-    <div class="topnav">
-        <a href="./index.html">Home</a>
-        <a href="./map.html">Map</a>
-        <a href="./quiz.html">Quiz</a>
+    <!--The title that will appear on the tab in my browser-->
+    <title>Quiz</title>
+    <!--linking to my js library-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!--linking to quiz.js-->
+    <script src="quiz.js" type="text/javascript" defer></script>
+    <!--linking to css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!--setting my navigation bar and links-->
+    <div id="navigation" class="topnav">
+      <a id="homePage" href="./index.html">Home</a>
+      <a id="mapPage" href="./map.html">Map</a>
+      <a id="quizPage" href="./quiz.html">Quiz</a>
+    </div>
+    <!--setting a main container for the confetti-->
+    <div id="confetti-container">
+      <!--setting a main container for the quiz-->
+      <div class="quiz-container">
+        <!--the title of the quiz that will show in the quiz container-->
+        <h1>Quiz</h1>
+        <!--container for the quiz text and answers-->
+        <div id="question-container">
+          <p id="question-text"></p>
+            <div id="answer-buttons"></div>
+        </div>
+        <!--container for the start button on the quiz-->
+        <div id="controls-container">
+          <button id="start-button">Start Quiz</button>
+        </div>
       </div>
-
-  <div id="confetti-container">
-
-  <div class="quiz-container">
-    <h1>Quiz</h1>
-    <div id="question-container">
-      <p id="question-text"></p>
-      <div id="answer-buttons"></div>
     </div>
-    <div id="controls-container">
-      <button id="start-button">Start Quiz</button>
-    </div>
-  </div>
-
-  </div>
-</body>
+  </body>
 </html>
-

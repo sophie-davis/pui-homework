@@ -2,98 +2,108 @@
 <!--Setting the language to English-->
 <html lang="en">
   <head>
+    <!--set character encoding to UTF-8-->
     <meta charset="UTF-8">
+    <!--set viewport for responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link to bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--including cdn-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--Linking to my css stylesheet-->
-    <link rel="stylesheet" 
-      href="pagestyle.css"/>
+    <link rel="stylesheet" href="pagestyle.css"/>
     <!--The title that will appear on the tab in my browser-->
     <title>Let's Learn!</title>
+    <!--load cards.js-->
     <script src="cards.js" type="text/javascript" defer></script>
   </head>
   <body>
-
-    <div class="topnav">
-        <a href="./index.html">Home</a>
-        <a href="./map.html">Map</a>
-        <a href="./quiz.html">Quiz</a>
-      </div>
-
-    <h1 
-      id="stateTitle">
-    </h1>
-<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="1000000000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../Final Project/images/Flower.svg" class="card-img-top" alt="generalized flower icon">
-              <div class="card-body">
-                <h5 class="card-title-flower">State Flower</h5>
-                <p class="card-text-flower">Flower Name</p>
+    <!--creating navigation bar-->
+    <div id="navigation" class="topnav">
+      <a id="homePage" href="./index.html">Home</a>
+      <a id="mapPage" href="./map.html">Map</a>
+      <a id="quizPage" href="./quiz.html">Quiz</a>
+    </div>
+    <!--setting header as the selected state -->
+    <h1 id="stateTitle"></h1>
+    <!--setting my carousel controls-->
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="1000000000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!--setting the first three flashcards-->
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card" style="width: 18rem;">
+                <img src="../Final Project/images/Flower.svg" class="card-img-top" alt="generalized flower icon">
+                <div class="card-body">
+                  <h5 class="card-title-flower">State Flower</h5>
+                  <p class="card-text-flower">Flower Name</p>
+                </div>
               </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../Final Project/images/Bird.svg" class="card-img-top" alt="generalized bird icon">
-              <div class="card-body">
-                <h5 class="card-title-bird">State Bird</h5>
-                <p class="card-text-bird">Bird Name</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="card" style="width: 18rem;">
+                <img src="../Final Project/images/Bird.svg" class="card-img-top" alt="generalized bird icon">
+                <div class="card-body">
+                  <h5 class="card-title-bird">State Bird</h5>
+                  <p class="card-text-bird">Bird Name</p>
+                </div>
               </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../Final Project/images/Capitol.svg" class="card-img-top" alt="generalized capitol building icon">
+            </div>
+            <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="../Final Project/images/Capitol.svg" class="card-img-top" alt="generalized capitol building icon">
               <div class="card-body">
                 <h5 class="card-title-capital">State Capital</h5>
                 <p class="card-text-capital">Capital</p>
               </div>
-          </div>
-        </div>
-      </div>   
-    </div>
-    <div class="carousel-item">    
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../Final Project/images/City.svg" class="card-img-top" alt="generalized city icon">
-            <div class="card-body">
-              <h5 class="card-title-city">Largest City</h5>
-              <p class="card-text-city">City Name</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../Final Project/images/nickname.svg" class="card-img-top" alt="generalized nametag icon">
-            <div class="card-body">
-              <h5 class="card-title-nickname">State Nickname</h5>
-              <p class="card-text-nickname">Nickname</p>
+        </div>   
+      </div>
+      <div class="carousel-item"> 
+        <!--setting the second three flashcards-->   
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="../Final Project/images/City.svg" class="card-img-top" alt="generalized city icon">
+              <div class="card-body">
+                <!--creating my card for largest city for selected state-->
+                <h5 class="card-title-city">Largest City</h5>
+                <p class="card-text-city">City Name</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../Final Project/images/Calendar.svg" class="card-img-top" alt="generalized calendar icon">
-            <div class="card-body">
-              <h5 class="card-title-statehood">Statehood</h5>
-              <p class="card-text-statehood">Date of Statehood</p>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="../Final Project/images/nickname.svg" class="card-img-top" alt="generalized nametag icon">
+              <div class="card-body">
+                <!--creating my card for state nickname for selected state-->
+                <h5 class="card-title-nickname">State Nickname</h5>
+                <p class="card-text-nickname">Nickname</p>
+              </div>
             </div>
           </div>
-        </div> 
-      </div>   
-    </div>
-    <div class="carousel-item">    
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="../Final Project/images/Calendar.svg" class="card-img-top" alt="generalized calendar icon">
+              <div class="card-body">
+                <!--creating my card for statehood for selected state-->
+                <h5 class="card-title-statehood">Statehood</h5>
+                <p class="card-text-statehood">Date of Statehood</p>
+              </div>
+            </div>
+          </div> 
+        </div>   
+      </div>
+      <div class="carousel-item">  
+        <!--setting the third three flashcards-->  
         <div class="row">
           <div class="col-lg-4">
             <div class="card" style="width: 18rem;">
               <img src="../Final Project/images/abbreviation.svg" class="card-img-top" alt="generalized abbreviation icon">
               <div class="card-body">
+                <!--creating my card for state abbreviation for selected state-->
                 <h5 class="card-title-abbreviation">State Abbreviation</h5>
                 <p class="card-text-abbreviation">Abbreviation</p>
               </div>
@@ -103,6 +113,7 @@
             <div class="card" style="width: 18rem;">
               <img src="../Final Project/images/Music.svg" class="card-img-top" alt="generalized guitar icon">
               <div class="card-body">
+                <!--creating my card for notable musician for selected state-->
                 <h5 class="card-title-musician">Notable Musician</h5>
                 <p class="card-text-musician">Singers</p>
               </div>
@@ -112,6 +123,7 @@
             <div class="card" style="width: 18rem;">
               <img src="../Final Project/images/food.svg" class="card-img-top" alt="generalized fork and knife icon">
               <div class="card-body">
+                <!--creating my card for state food for selected state-->
                 <h5 class="card-title-food">State Food</h5>
                 <p class="card-text-food">Food</p>
               </div>
@@ -119,42 +131,21 @@
           </div>
         </div>   
       </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-lg-1">
-    <button id="left" class="d-flex align-items-center mt-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span id="leftarrow" class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
     </div>
-    <div class="col-lg-1">
-    <button id="right" class="d-flex align-items-center mt-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span id="rightarrow" class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  </div>
-</div>
-
-
+    <!--setting the arrows for carousel navigation-->
+    <div class="row justify-content-center">
+      <div class="col-lg-1">
+        <button id="left" class="d-flex align-items-center mt-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span id="leftarrow" class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+      </div>
+      <div class="col-lg-1">
+        <button id="right" class="d-flex align-items-center mt-5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span id="rightarrow" class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  

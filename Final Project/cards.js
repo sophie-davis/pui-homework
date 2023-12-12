@@ -1,9 +1,14 @@
+//establish queryString from the url
 const queryString = window.location.search;
+//establish params as the new URLSearchParams from the queryString
 const params = new URLSearchParams(queryString);
+//establish chosenState as the state value from the URL
 const chosenState = params.get('state');
+//establish headerElement as the statetitle element
 const headerElement = document.querySelector('#stateTitle');
+//headerelement inner text is set to the state parameter
 headerElement.innerText = chosenState;
-
+//establishing a state object with information about every state
 const states = {
     "Alabama": {
         "stateFlower": "Camellia",
@@ -567,31 +572,39 @@ const states = {
         "stateFood": "Bison",       
     },
 };
-
+//setting headerelement to equal the content of the flower
 const headerElement2= document.querySelector('.card-text-flower');
+//setting the innertext to equal the flower of the selected state
 headerElement2.innerText=states[chosenState].stateFlower;
-
+//setting headerelement to equal the content of the bird
 const headerElement3= document.querySelector('.card-text-bird');
+//setting the innertext to equal the bird of the selected state
 headerElement3.innerText=states[chosenState].stateBird;
-
+//setting headerelement to equal the content of the capital
 const headerElement4= document.querySelector('.card-text-capital');
+//setting the innertext to equal the capital of the selected state
 headerElement4.innerText=states[chosenState].stateCapital;
-
+//setting headerelement to equal the content of the largest city
 const headerElement5= document.querySelector('.card-text-city');
+//setting the innertext to equal the largest city of the selected state
 headerElement5.innerText=states[chosenState].largestCity;
-
+//setting headerelement to equal the content of the nickname
 const headerElement6= document.querySelector('.card-text-nickname');
+//setting the innertext to equal the nickname of the selected state
 headerElement6.innerText=states[chosenState].stateNickname;
-
+//setting headerelement to equal the content of the year of statehood
 const headerElement7= document.querySelector('.card-text-statehood');
+//setting the innertext to equal the year of statehood of the selected state
 headerElement7.innerText=states[chosenState].statehood;
-
+//setting headerelement to equal the content of the abbreviation
 const headerElement8= document.querySelector('.card-text-abbreviation');
+//setting the innertext to equal the abbreviation of the selected state
 headerElement8.innerText=states[chosenState].stateAbbreviation;
-
+//setting headerelement to equal the content of the musician
 const headerElement9= document.querySelector('.card-text-musician');
+//setting the innertext to equal the musician of the selected state
 headerElement9.innerText=states[chosenState].notableMusicians;
-
+//setting headerelement to equal the content of the food
 const headerElement10= document.querySelector('.card-text-food');
+//setting the innertext to equal the food of the selected state
 headerElement10.innerText=states[chosenState].stateFood;
-

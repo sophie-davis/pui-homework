@@ -2,34 +2,42 @@
 <!--Setting the language to English-->
 <html lang="en">
   <head>
+    <!--set character encoding to UTF-8-->
     <meta charset="UTF-8">
+    <!--set viewport for responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link to bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--link to bootstrap from cdn-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--Linking to my css stylesheet-->
-    <link rel="stylesheet" 
-      href="pagestyle.css"/>
+    <link rel="stylesheet" href="pagestyle.css"/>
     <!--The title that will appear on the tab in my browser-->
-    <title>USA Game</title>
+    <title>Welcome Page</title>
   </head>
   <body>
+    <!--creating container for main page content-->
     <div class = "container">
-      <div class = "row">
-        <div class = "col">
+      <!--top row of images on home page-->
+      <div id="topRow" class = "row">
+        <!--top left image on home page-->
+        <div id="topLeftPhoto" class = "col">
           <img 
           src = "../Final Project/images/beach.jpg"
           alt = "lifeguard tower on sandy beach"
           class = "img-thumbnail"
           />
         </div>
-        <div class = "col">
+        <!--top center image on home page-->
+        <div id="topCenterPhoto" class = "col">
           <img 
           src = "../Final Project/images/canyon.jpg"
           alt = "canyon"
           class = "img-thumbnail"
           />
         </div>
-        <div class = "col">
+        <!--top right image on home page-->
+        <div id="topRightPhoto" class = "col">
           <img 
           src = "../Final Project/images/forest.jpg"
           alt = "forest"
@@ -37,30 +45,35 @@
           />
         </div>
       </div>
-      <div class = "row" id="titlepage">
+      <!--bottom row of images on home page-->
+      <div id="bottomRow" class = "row">
+        <!--main text on home page-->
         <div class = "col-8 text-end">
-            <a href="./map.html" class="openingtitle">Learn All About the USA</a>
+          <a href="./map.html" class="openingtitle">Learn All About the USA</a>
         </div>
         <div class = "col-4">
           <img src="../Final Project/images/arrow.svg"  class="arrow">
         </div>
       </div>
-      <div class = "row">
-        <div class = "col">
+      <!--bottom left image on home page-->
+      <div id="bottomRow" class = "row">
+        <div id="bottomLeftPhoto" class = "col">
           <img 
           src = "../Final Project/images/newyork.jpg"
           alt = "new york street"
           class = "img-thumbnail"
           />
         </div>
-        <div class = "col">
+        <!--bottom center image on home page-->
+        <div id="bottomCenterPhoto" class = "col">
           <img 
           src = "../Final Project/images/openroad.jpg"
           alt = "open road in the desert"
           class = "img-thumbnail"
           />
         </div>
-        <div class = "col">
+        <!--bottom right image on home page-->
+        <div id="bottomRightPhoto" class = "col">
           <img 
           src = "../Final Project/images/rushmore.jpg"
           alt = "mount rushmore"
@@ -69,8 +82,5 @@
         </div>
       </div>
     </div> 
-
   </body>
 </html>
-
-
