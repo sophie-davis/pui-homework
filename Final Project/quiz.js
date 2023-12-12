@@ -1,3 +1,35 @@
+function initializeConfetti() {
+  particlesJS('confetti-container', {
+      particles: {
+          number: { value: 200 },
+          color: { value: '#dcb482'},
+          shape: { type: 'circle'  },
+          opacity: { value: 0.9, random: true },
+          size: { value: 10, random: true },
+          move: {
+              enable: true,
+              speed: 5,
+              direction: 'bottom',
+              random: true,
+              straight: false,
+              out_mode: 'out',
+              bounce: false,
+          },
+      },
+      interactivity: { detect_on: 'window', events: { onhover: { enable: false } } },
+  });
+}
+
+// Call the function to initialize confetti when the quiz is completed
+function confettiOnQuizComplete() {
+  initializeConfetti();
+}
+
+
+
+
+
+
 // Define an array of quiz questions
 const quizQuestions = [
     {
@@ -90,42 +122,72 @@ function displayQuestion() {
   });
 }
 
-// Function to check the selected answer
+
 function checkAnswer(selectedOption) {
   const currentQuestion = quizQuestions[currentQuestionIndex];
+  const answerButtons = document.getElementsByClassName("answer-button");
+
+  // Disable all buttons to prevent further interaction
+  for (let i = 0; i < answerButtons.length; i++) {
+    answerButtons[i].disabled = true;
+  }
+
+  // Find the button corresponding to the selected answer
+  const selectedButton = Array.from(answerButtons).find(button => button.innerText === selectedOption);
 
   // Check if the selected answer is correct
   if (selectedOption === currentQuestion.correctAnswer) {
-    score++;
+    selectedButton.classList.add("correct-answer");
+    score++; // Increment the score for correct answers
+  } else {
+    selectedButton.classList.add("wrong-answer");
+    // Find the button corresponding to the correct answer and highlight it
+    const correctButton = Array.from(answerButtons).find(button => button.innerText === currentQuestion.correctAnswer);
+    correctButton.classList.add("correct-answer");
   }
 
   // Move to the next question or end the quiz if all questions are answered
   currentQuestionIndex++;
 
   if (currentQuestionIndex < quizQuestions.length) {
-    displayQuestion();
+    // Delay before displaying the next question
+    setTimeout(displayQuestion, 1000);
   } else {
-    endQuiz();
+    // Delay before ending the quiz
+    setTimeout(endQuiz, 1000);
   }
 }
 
+
 // Function to end the quiz
 function endQuiz() {
-
-
   // Calculate the score percentage
   const scorePercentage = (score / quizQuestions.length) * 100;
 
   // Display the final score
-  const questionContainer = document.getElementById("question-container");
+  const questionContainer = document.getElementById('question-container');
   questionContainer.innerHTML = `
-    <h2>Quiz Completed!</h2>
-    <p>Your Score: ${score} out of ${quizQuestions.length}</p>
+      <h2>Quiz Completed!</h2>
+      <p>Your Score: ${score} out of ${quizQuestions.length}</p>
   `;
+
+  // Trigger confetti
+  confettiOnQuizComplete();
 }
 
 // Add event listener to start the quiz when the start button is clicked
 document.getElementById("start-button").addEventListener("click", startQuiz);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
